@@ -10,7 +10,7 @@ const App = () => {
     const url = `/.netlify/functions/getMovies`
     
     const response = await axios.get(url)
-    const data = response.data.results
+    const data = response.data
     setMovies(data)
   }
 
@@ -18,8 +18,6 @@ const App = () => {
     fetchMovies()
 	}, [])
   
-  console.log(movies)
-
 	return (
 		<>
 			{movies === null ? (

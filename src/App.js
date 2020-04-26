@@ -17,8 +17,6 @@ const App = () => {
 	useEffect(() => {
     fetchMovies()
 	}, [])
-  
-  console.log(process.env)
 
 	return (
 		<>

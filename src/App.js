@@ -18,6 +18,8 @@ const App = () => {
     fetchMovies()
 	}, [])
   
+  console.log(process.env)
+
 	return (
 		<>
 			{movies === null ? (
